@@ -1,0 +1,26 @@
+{
+  "name": "input-css",
+  "authors": [
+    "im_gerardo"
+  ],
+  "description": "button for activate some status",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "css",
+    "jquery",
+    "html",
+    "input",
+    "code"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
