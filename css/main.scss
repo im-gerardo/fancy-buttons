@@ -9,6 +9,9 @@ body{
 	justify-content:center;
 	align-items:center;
 }
+.clearfix{
+	clear: both;
+}
 
 .input{
 	width: 80px;
@@ -20,7 +23,7 @@ body{
 	cursor: pointer;
 
 	&.on{
-		background-color: #1DE9B6;
+		background-color: #18CEA0;
 		transition:all .2s ease-in;
 	}
 
@@ -53,10 +56,49 @@ body{
 		border: 1px solid #1DE9B6;
 		box-shadow: 0px 1px 4px #ccc;
 		color: #fff;
-		display: flex;
-		justify-content:center;
-		align-items:center;
 		line-height: 1;
-		font-size: 1.2em;
 	}
 }
+
+// Square input button
+	.input-square{
+		background-color: #ccc;
+		width: 80px;
+		height: 40px;
+		border-radius: 3px;
+		position: relative;
+		cursor: pointer;
+		margin-left: 20px;
+
+		&.on{
+			background-color: #18CEA0;
+			transition: all .3s ease-in;
+		}
+
+		&:before{
+			content: "off";
+			position: absolute;
+			width: 45px;
+			height: 45px;
+			top: -4px;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			font-family: 'Roboto';
+			color:#bbb;
+			background-color: #e0e0e0;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-shadow: 0px 1px 4px #ccc;
+			transition: all .3s ease-in;
+		}
+
+		&.on:before{
+			content: "on";
+			transform: translateX(33px);
+			transition: all .3s ease-in;
+			background-color: #1DE9B6;
+			border: 1px solid #1DE9B6;
+			color: #fff;
+		}
+	}
