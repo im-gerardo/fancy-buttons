@@ -102,3 +102,47 @@ body{
 			color: #fff;
 		}
 	}
+
+// input rounded inside
+	.input-rounded-inside{
+		width: 60px;
+		height: 40px;
+		border-radius: 25px;
+		background-color: #ccc;
+		margin-left: 20px;
+		position: relative;
+		cursor: pointer;
+
+		&.on{
+			background-color: #18CEA0;
+			transition: all .3s ease-in;
+		}
+
+		&:before{
+			content:"off";
+			position: absolute;
+			top:1px;
+			left:0px;
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+			background-color: #e0e0e0;
+			border: 1px solid #ccc;
+			display: flex;
+			justify-content:center;
+			align-items:center;
+			font-family: 'Roboto';
+			color: #bbb;
+			box-shadow: 0px 1px 4px #ccc;
+			transition: all .3s ease-in;
+		}
+
+		&.on:before{
+			content: "on";
+			color:#fff;
+			background-color: #1DE9B6;
+			border: 1px solid #1DE9B6;
+			transform: translateX(21px);
+			transition: all .3s ease-in;
+		}
+	}
